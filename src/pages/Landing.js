@@ -17,7 +17,7 @@ import {
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import logo from '../images/MastersSC-logo.png';
-import Services from './services';
+import Services from '../pages/Services'
 import '../styles/global.css'
 const features = [
 	{
