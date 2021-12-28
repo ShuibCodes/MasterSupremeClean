@@ -22,7 +22,7 @@ export default function Pricing() {
 		<div className="bg-white">
 			<div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-0">
 				<div className="text-center">
-					<h2 className="text-lg leading-6 font-semibold text-indigo-600 uppercase tracking-wider">Pricing</h2>
+					<h2 style={{fontFamily: 'Montserrat'}} className="text-lg leading-6 font-semibold text-indigo-600 uppercase tracking-wider">Pricing</h2>
 					<p className="mt-2 text-3xl font-extrabold text-black sm:text-4xl lg:text-5xl">
 						The right price, for the right home
 					</p>

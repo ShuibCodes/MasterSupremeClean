@@ -18,6 +18,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import logo from '../images/MastersSC-logo.png';
 import Services from './services';
+import '../styles/global.css'
 const features = [
 	{
 		name: 'Services',
@@ -216,9 +217,9 @@ export default function Landing() {
 			<main className="lg:relative">
 				<div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
 					<div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-						<h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-							<span className="block xl:inline">Champions in</span>{' '}
-							<span className="block text-indigo-600 xl:inline">Quality Cleaning</span>
+						<h1 style={{fontFamily: 'Montserrat'}} className="text-6xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+							<span style={{fontFamily: 'Montserrat'}}  className="block xl:inline font-extrabold ">Champions in</span>{' '}
+							<span style={{fontFamily: 'Montserrat'}} className="block xl:inline"className="block text-indigo-600 xl:inline font-extrabold ">Quality Cleaning</span>
 						</h1>
 						<p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
 							Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
@@ -230,7 +231,7 @@ export default function Landing() {
 						<div className="mt-10">
 							<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
 							
-								<p className="text-base font-medium text-gray-700">
+								<p className="text-base font-medium text-gray-500">
 									Enter your Post Code to get started
 								</p>
 								<form action="#" method="POST" className="mt-3 sm:flex">
