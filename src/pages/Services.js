@@ -11,6 +11,7 @@ import {
 import match from '../images/match.png'
 import results from '../images/results.png'
 import clean from '../images/clean.png'
+import map from '../images/map.png'
   // const features = [
   //   { name: '1. Match', icon: CloudUploadIcon },
   //   { name: '2. Deliver', icon: LockClosedIcon },
@@ -35,7 +36,7 @@ import clean from '../images/clean.png'
                     <div className="-mt-6">
                       <div>
                         <span className=" bg-indigo-200 inline-flex items-center justify-center p-3 bg-white border-2 border-white rounded-md shadow-xl">
-                          <img src={match} alt="match" className="h-6 w-6 " aria-hidden="true" />
+                          <img src={map} alt="match" className="h-6 w-6 " aria-hidden="true" />
                         </span>
                       </div>
                       <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">1. Match</h3>
@@ -44,6 +45,7 @@ import clean from '../images/clean.png'
                       </p>
                     </div>
                   </div>
+                  
                 </div>
 
                 <div className="pt-6">
@@ -83,6 +85,7 @@ import clean from '../images/clean.png'
         </div>
         <div className="mx-auto mt-12 max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <button
+            style={{backgroundColor:"#1070D9"}}
             	className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
             >
             Find Your Cleaner</button>

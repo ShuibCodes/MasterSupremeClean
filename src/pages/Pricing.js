@@ -12,9 +12,9 @@ const growthFeatures = [
 	'Nam ut ipsa nesciunt culpa modi dolor',
 ];
 
-import home from '../images/home.png'
-import room from '../images/interior-design.png'
-import office from '../images/office.png'
+import home from '../images/home.png';
+import room from '../images/interior-design.png';
+import office from '../images/office.png';
 
 
 export default function Pricing() {
@@ -22,11 +22,15 @@ export default function Pricing() {
 		<div className="bg-white">
 			<div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-0">
 				<div className="text-center">
-					<h2 style={{fontFamily: 'Montserrat'}} className="text-lg leading-6 font-semibold text-indigo-600 uppercase tracking-wider">Pricing</h2>
+					<h2
+						style={{ fontFamily: 'Montserrat', color: '#1070D9' }}
+						className="text-lg leading-6 font-semibold uppercase tracking-wider"
+					>
+						Pricing
+					</h2>
 					<p className="mt-2 text-3xl font-extrabold text-black sm:text-4xl lg:text-5xl">
 						The right price, for the right home
 					</p>
-					
 				</div>
 			</div>
 
@@ -48,9 +52,13 @@ export default function Pricing() {
 												</h3>
 												<div className="mt-4 flex items-center justify-center">
 													<span className="flex items-start tracking-tight text-gray-900">
-														<img style={{padding:"10px", height:"120px"}} className="w-auto py-4" src={room} alt="room-logo" />
+														<img
+															style={{ padding: '10px', height: '120px' }}
+															className="w-auto py-4"
+															src={room}
+															alt="room-logo"
+														/>
 													</span>
-												
 												</div>
 											</div>
 										</div>
@@ -93,7 +101,10 @@ export default function Pricing() {
 									/>
 									<div className="absolute inset-x-0 top-0 transform translate-y-px">
 										<div className="flex justify-center transform -translate-y-1/2">
-											<span className="inline-flex rounded-full bg-indigo-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white">
+											<span
+												style={{ backgroundColor: '#1070D9' }}
+												className="inline-flex rounded-full bg-indigo-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white"
+											>
 												Most popular
 											</span>
 										</div>
@@ -108,10 +119,13 @@ export default function Pricing() {
 											</h3>
 											<div className="mt-4 flex items-center justify-center">
 												<span className="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
-													
-												<img style={{maxHeight:"130px"}}  className="h-100 w-100" src={home} alt="room-logo" />
+													<img
+														style={{ maxHeight: '130px' }}
+														className="h-100 w-100"
+														src={home}
+														alt="room-logo"
+													/>
 												</span>
-												
 											</div>
 										</div>
 									</div>
@@ -158,9 +172,13 @@ export default function Pricing() {
 												</h3>
 												<div className="mt-4 flex items-center justify-center">
 													<span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                                    <img style={{padding:"10px", height:"120px"}} className="w-auto py-4" src={office} alt="room-logo" />
+														<img
+															style={{ padding: '10px', height: '120px' }}
+															className="w-auto py-4"
+															src={office}
+															alt="room-logo"
+														/>
 													</span>
-													
 												</div>
 											</div>
 										</div>

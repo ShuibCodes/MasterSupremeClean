@@ -17,27 +17,31 @@ import {
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import logo from '../images/MastersSC-logo.png';
-import Services from '../pages/Services'
-import '../styles/global.css'
+import Services from '../pages/Services';
+import '../styles/global.css';
+import { MdOutlineDryCleaning } from 'react-icons/md';
+import { BsCurrencyDollar } from 'react-icons/bs';
+import { BsQuestionLg } from 'react-icons/bs';
+import cleaner from '../images/window-cleaner.jpg';
 const features = [
 	{
 		name: 'Services',
 		href: '#',
 		description: '',
-		icon: ChartBarIcon,
+		icon: MdOutlineDryCleaning,
 	},
 	{
 		name: 'Pricing',
 		href: '#',
 		description: 'Speak directly to your customers in a more meaningful way.',
-		icon: CursorClickIcon,
+		icon: BsCurrencyDollar,
 	},
-	{ name: 'FAQs', href: '#', description: "Your customers' data will be safe and secure.", icon: ShieldCheckIcon },
+	{ name: 'FAQs', href: '#', description: "Your customers' data will be safe and secure.", icon: BsQuestionLg },
 	{
-		name: 'Contact Us',
+		name: 'Get A Quote',
 		href: '#',
 		description: "Connect with third-party tools that you're already using.",
-		icon: ViewGridIcon,
+		icon: 'h',
 	},
 ];
 
@@ -51,7 +55,7 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
 
-import Pricing from '../pages/Pricing'
+import Pricing from '../pages/Pricing';
 
 export default function Landing() {
 	return (
@@ -61,7 +65,6 @@ export default function Landing() {
 					<div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
 						<div className="flex justify-start lg:w-100 lg:flex-1">
 							<a href="#">
-							
 								<img className="h-10 w-100 sm:h-100" src={logo} alt="" />
 							</a>
 						</div>
@@ -75,21 +78,7 @@ export default function Landing() {
 							<Popover className="relative">
 								{({ open }) => (
 									<>
-										<Popover.Button
-											className={classNames(
-												open ? 'text-gray-900' : 'text-gray-500',
-												'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-											)}
-										>
-											<span>Services</span>
-											<ChevronDownIcon
-												className={classNames(
-													open ? 'text-gray-600' : 'text-gray-400',
-													'ml-2 h-5 w-5 group-hover:text-gray-500'
-												)}
-												aria-hidden="true"
-											/>
-										</Popover.Button>
+										<span>Services</span>
 
 										<Transition
 											as={Fragment}
@@ -166,11 +155,7 @@ export default function Landing() {
 							<div className="pt-5 pb-6 px-5">
 								<div className="flex items-center justify-between">
 									<div>
-										<img
-											className="h-8 w-auto"
-											src={logo}
-											alt="logo"
-										/>
+										<img className="h-8 w-auto" src={logo} alt="logo" />
 									</div>
 									<div className="-mr-2">
 										<Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -202,8 +187,9 @@ export default function Landing() {
 							<div className="py-6 px-5 space-y-6">
 								<div>
 									<a
+										style={{ backgroundColor: '#1070D9' }}
 										href="#"
-										className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+										className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-indigo-700"
 									>
 										Get a Quote
 									</a>
@@ -215,22 +201,30 @@ export default function Landing() {
 			</Popover>
 
 			<main className="lg:relative">
-				<div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
-					<div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-						<h1 style={{fontFamily: 'Montserrat'}} className="text-6xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-							<span style={{fontFamily: 'Montserrat'}}  className="block xl:inline font-extrabold ">Champions in</span>{' '}
-							<span style={{fontFamily: 'Montserrat'}} className="block xl:inline"className="block text-indigo-600 xl:inline font-extrabold ">Quality Cleaning</span>
+				<div className="mx-auto  max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+					<div className="px-4 lg:-mt-12 lg:w-1/2 sm:px-8 xl:pr-16">
+						<h1
+							style={{ fontFamily: 'Montserrat' }}
+							className="py-4 lg:py-0 text-4xl lg:text-6xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
+						>
+							<span style={{ fontFamily: 'Montserrat' }} className="block xl:inline font-extrabold ">
+								Champions in
+							</span>{' '}
+							<span
+								style={{ fontFamily: 'Montserrat', fontSize: '#1070D9' }}
+								className="block xl:inline"
+								className="block text-indigo-600 xl:inline font-extrabold "
+							>
+								Quality Cleaning
+							</span>
 						</h1>
-						<p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+						<p className="mt-3 max-w-md mx-auto text-lg text-sm text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
 							Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
 							Elit sunt amet fugiat veniam occaecat fugiat aliqua.
 						</p>
-						<p className="text-base font-medium text-gray-900 my-4 ">
-									5* Service. Fully Vetted Cleaners
-								</p>
+						<p className="text-base font-medium text-gray-900 my-4 ">5* Service. Fully Vetted Cleaners</p>
 						<div className="mt-10">
 							<div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-							
 								<p className="text-base font-medium text-gray-500">
 									Enter your Post Code to get started
 								</p>
@@ -246,8 +240,9 @@ export default function Landing() {
 										placeholder="Enter Postcode"
 									/>
 									<button
+										style={{ backgroundColor: '#1070D9' }}
 										type="submit"
-										className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+										className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
 									>
 										Get Started
 									</button>
@@ -256,19 +251,13 @@ export default function Landing() {
 						</div>
 					</div>
 				</div>
-				<div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-					<img
-						className="absolute inset-0 w-full h-full object-cover"
-						src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-						alt=""
-					/>
+				<div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-5/6">
+					<img className="absolute inset-0 w-full h-full object-cover" src={cleaner} alt="cleaner-image" />
 				</div>
 			</main>
 			<Services />
-   
-      <Pricing />
-     
-    
+
+			<Pricing />
 		</div>
 	);
 }
