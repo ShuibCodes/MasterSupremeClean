@@ -10,6 +10,7 @@ module.exports = {
     author: `@taylorbryant`,
   },
   plugins: [
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {

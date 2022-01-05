@@ -1,8 +1,7 @@
 /* eslint-disable */
 import React from 'react';
-import { Link } from 'gatsby';
 import { CheckIcon } from '@heroicons/react/outline';
-import Layout from '../components/layout';
+import {Link} from 'gatsby'
 const hobbyFeatures = ['Pariatur quod similique', 'Sapiente libero doloribus', 'Vel ipsa esse repudiandae'];
 const scaleFeatures = ['Pariatur quod similique', 'Sapiente libero doloribus', 'Vel ipsa esse repudiandae'];
 const growthFeatures = [
@@ -17,13 +16,9 @@ import home from '../images/home.png';
 import room from '../images/interior-design.png';
 import office from '../images/office.png';
 
-export default function PricingPage(props) {
-	
+export default function PricingSection() {
 	return (
-        <Layout>
-
-      
-		<div className="bg-white mt-12" id="pricing-section">
+		<div className="bg-white" id="pricing-section">
 			<div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-0">
 				<div className="text-center">
 					<h2
@@ -84,9 +79,8 @@ export default function PricingPage(props) {
 											</ul>
 											<div className="mt-8">
 												<div className="rounded-lg shadow-md">
-													
-                                                    <Link to="/contact"
-														
+													<Link
+														to="/contact"
 														className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
 														aria-describedby="tier-hobby"
 													>
@@ -152,9 +146,9 @@ export default function PricingPage(props) {
 										</ul>
 										<div className="mt-10">
 											<div className="rounded-lg shadow-md">
-												<Link to="/contact"
+												<Link
+													to="/contact"
 													style={{ backgroundColor: '#1070D9' }}
-													
 													className="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
 													aria-describedby="tier-growth"
 												>
@@ -206,8 +200,8 @@ export default function PricingPage(props) {
 											</ul>
 											<div className="mt-8">
 												<div className="rounded-lg shadow-md">
-													<Link to="/contact"
-														
+													<Link
+														to="/contact"
 														className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
 														aria-describedby="tier-scale"
 													>
@@ -224,6 +218,5 @@ export default function PricingPage(props) {
 				</div>
 			</div>
 		</div>
-        </Layout>
 	);
 }

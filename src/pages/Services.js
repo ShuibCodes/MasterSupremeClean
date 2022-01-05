@@ -23,7 +23,7 @@ import map from '../images/map.png'
     return (
       <div className="relative bg-white py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 className="text-base font-semibold tracking-wider text-gray-900 uppercase">How it works</h2>
+          <h2 style={{color:"#C8A762"}} className="text-base font-semibold tracking-wider text-gray-900 uppercase">How it works</h2>
           <p className="mt-2 text-3xl font-extrabold text-indigo-600 tracking-tight sm:text-4xl">
           Stress-free house cleans
           </p>
@@ -56,7 +56,7 @@ import map from '../images/map.png'
                           <img src={clean} alt="match" className="h-6 w-6 text-white" aria-hidden="true" />
                         </span>
                       </div>
-                      <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">1.Clean</h3>
+                      <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">2. Clean</h3>
                       <p className="mt-5 text-base text-gray-500">
                         Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
                       </p>
@@ -72,7 +72,7 @@ import map from '../images/map.png'
                           <img src={results} alt="match" className="h-6 w-6 text-white" aria-hidden="true" />
                         </span>
                       </div>
-                      <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">1. Match</h3>
+                      <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">3. Results</h3>
                       <p className="mt-5 text-base text-gray-500">
                         Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
                       </p>
