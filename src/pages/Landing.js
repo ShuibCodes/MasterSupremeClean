@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { Fragment, useState } from 'react';
-import {Link} from 'gatsby'
+import { Link } from 'gatsby';
 import { Popover, Transition } from '@headlessui/react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import PricingSection from './PricingSection';
@@ -28,6 +28,7 @@ import { BsQuestionLg } from 'react-icons/bs';
 import cleaner from '../images/window-cleaner.jpg';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
+import Gallery from '../components/Gallery';
 
 const features = [
 	{
@@ -87,10 +88,7 @@ export default function Landing(props) {
 							<Popover className="relative">
 								{({ open }) => (
 									<>
-									
-										<button
-											onClick={() => scrollTo('#services')}
-										>Services</button>
+										<button onClick={() => scrollTo('#services')}>Services</button>
 
 										<Transition
 											as={Fragment}
@@ -143,10 +141,9 @@ export default function Landing(props) {
 							</a>
 						</Popover.Group>
 						<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-						<Link
-							to="/contact"
+							<Link
+								to="/contact"
 								style={{ backgroundColor: '#1070D9' }}
-							
 								className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-indigo-700"
 							>
 								Get a Quote
@@ -251,22 +248,20 @@ export default function Landing(props) {
 									<label htmlFor="email" className="sr-only">
 										Enter your Post Code to get started
 									</label>
-									
-									
+
 									<input
 										type="text"
-										name="postcode"	
+										name="postcode"
 										id="postcode"
 										className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
 										placeholder="Enter Postcode"
 										value={postcode}
 										onChange={(e) => setPostcode(e.target.value)}
 									/>
-									
+
 									<Link
 										to="/contact"
 										style={{ backgroundColor: '#1070D9' }}
-										
 										className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
 									>
 										Get Started
@@ -281,11 +276,15 @@ export default function Landing(props) {
 				</div>
 			</main>
 			<div id="services">
-			<Services />
+				<Services />
 			</div>
-	
+
 			<div id="pricing-section">
 				<PricingSection />
+			</div>
+			<div class="container -mt-">
+				{' '}
+				<Gallery />
 			</div>
 
 			<CTA />

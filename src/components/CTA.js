@@ -18,8 +18,7 @@ function CTA() {
 									<span className="block mt-2">Get Your FREE quote today!</span>
 								</h2>
 								<p className="mt-4 text-lg leading-6 text-indigo-200">
-									Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
-									sagittis vel nulla nec.
+									Our team will provide you with a free quote based on what type of cleaning service you would like
 								</p>
 								<Link
 									to="/contact"
