@@ -225,7 +225,7 @@ export default function Landing(props) {
 								Champions in
 							</span>{' '}
 							<span
-								style={{ fontFamily: 'Montserrat', fontSize: '#1070D9' }}
+								style={{ fontFamily: 'Montserrat', fontSize: '#1070D9', color: '#1070D9'  }}
 								className="block xl:inline"
 								className="block text-indigo-600 xl:inline font-extrabold "
 							>
@@ -282,8 +282,8 @@ export default function Landing(props) {
 			<div id="pricing-section">
 				<PricingSection />
 			</div>
-			<div class="container -mt-">
-				{' '}
+			<div class="center-center -mt-64">
+				
 				<Gallery />
 			</div>
 

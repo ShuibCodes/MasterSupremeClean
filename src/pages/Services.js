@@ -24,7 +24,7 @@ import map from '../images/map.png'
       <div className="relative bg-white py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 style={{color:"#C8A762"}} className="text-base font-semibold tracking-wider text-gray-900 uppercase">How it works</h2>
-          <p className="mt-2 text-3xl font-extrabold text-indigo-600 tracking-tight sm:text-4xl">
+          <p style={{color: '#1070D9' }} className="mt-2 text-3xl font-extrabold text-indigo-600 tracking-tight sm:text-4xl">
           Stress-free house cleans
           </p>
          

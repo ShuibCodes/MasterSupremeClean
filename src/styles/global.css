@@ -3,3 +3,18 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+.image-size{
+    width: 1000px;
+    height: 1000px;
+}
+
+@media only screen and (max-width: 760px) {
+
+.image-size{
+    width: auto;
+    height: auto;
+}
+
+}
