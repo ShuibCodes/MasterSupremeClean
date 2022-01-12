@@ -131,13 +131,14 @@ export default function Landing(props) {
 									</>
 								)}
 							</Popover>
-
+							<Link to="/Pricing">								
 							<button
 								className="text-base font-medium text-gray-500 hover:text-gray-900"
 								onClick={() => scrollTo('#pricing-section')}
 							>
 								Pricing
 							</button>
+							</Link>	
 							<a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
 								FAQ's
 							</a>
@@ -283,9 +284,7 @@ export default function Landing(props) {
 				<Services />
 			</div>
 
-			<div id="pricing-section">
-				<PricingSection />
-			</div>
+			
 			<div class="center-center -mt-64">
 				<Gallery />
 			</div>

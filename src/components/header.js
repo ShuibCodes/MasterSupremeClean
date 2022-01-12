@@ -53,7 +53,7 @@ function Header() {
 						<div className="flex justify-start lg:w-100 lg:flex-1">
 							<a href="#">
 							<Link to="/Landing">
-								<img className="h-10 w-100 sm:h-100" src={logo} alt="" />
+							<img style={{height:"60px"}}  className="w-100 sm:h-100" src={logo} alt="" />
 								</Link>
 							</a>
 						</div>
