@@ -27,7 +27,8 @@ function ContactPage(props) {
 								We’d love to hear from you! Send us a message using the form opposite and we'll get back to you with a quote 
 							</p>
 							<form
-								action="#"
+
+								action="https://getform.io/f/9ecac829-8b1c-4bf9-9d59-6f609815a648"
 								method="POST"
 								class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 							>
@@ -103,7 +104,7 @@ function ContactPage(props) {
 												id="services"
 												name="services"
 												value="Full-house-clean"
-												type="radio"
+												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
 											<label for="full-house-clean" class="ml-3">
@@ -115,7 +116,7 @@ function ContactPage(props) {
 												
 												name="services"
 												value="1-3 Rooms"
-												type="radio"
+												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
 											<label for="budget-25k-50k" class="ml-3">
@@ -127,7 +128,7 @@ function ContactPage(props) {
 												id=""
 												name="services"
 												value="studio-flat"
-												type="radio"
+												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
 											<label for="" class="ml-3">

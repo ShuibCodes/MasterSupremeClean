@@ -71,11 +71,12 @@ export default function Landing(props) {
 	return (
 		<div className="relative bg-gray-50">
 			<Popover className="relative bg-white shadow">
+				
 				<div className="max-w-7xl mx-auto px-4 sm:px-6">
 					<div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
 						<div className="flex justify-start lg:w-100 lg:flex-1">
 							<a href="#">
-								<img className="h-10 w-100 sm:h-100" src={logo} alt="" />
+								<img style={{height:"60px"}}  className="w-100 sm:h-100" src={logo} alt="" />
 							</a>
 						</div>
 						<div className="-mr-2 -my-2 md:hidden">
@@ -84,6 +85,7 @@ export default function Landing(props) {
 								<MenuIcon className="h-6 w-6" aria-hidden="true" />
 							</Popover.Button>
 						</div>
+						<div className="lg:relative lg:left-72" >
 						<Popover.Group as="nav" className="hidden md:flex space-x-10">
 							<Popover className="relative">
 								{({ open }) => (
@@ -140,6 +142,7 @@ export default function Landing(props) {
 								FAQ's
 							</a>
 						</Popover.Group>
+						</div>
 						<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 							<Link
 								to="/contact"
@@ -151,7 +154,7 @@ export default function Landing(props) {
 						</div>
 					</div>
 				</div>
-
+				
 				<Transition
 					as={Fragment}
 					enter="duration-200 ease-out"
@@ -225,7 +228,7 @@ export default function Landing(props) {
 								Champions in
 							</span>{' '}
 							<span
-								style={{ fontFamily: 'Montserrat', fontSize: '#1070D9', color: '#1070D9'  }}
+								style={{ fontFamily: 'Montserrat', fontSize: '#1070D9', color: '#1070D9' }}
 								className="block xl:inline"
 								className="block text-indigo-600 xl:inline font-extrabold "
 							>
@@ -258,14 +261,15 @@ export default function Landing(props) {
 										value={postcode}
 										onChange={(e) => setPostcode(e.target.value)}
 									/>
-
-									<Link
-										to="/contact"
-										style={{ backgroundColor: '#1070D9' }}
-										className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white shadow-sm  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
-									>
-										Get Started
-									</Link>
+									<div class="mt-8 lg:mt-0">
+										<Link
+											to="/contact"
+											style={{ backgroundColor: '#1070D9' }}
+											className="w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+										>
+											Get Started
+										</Link>
+									</div>
 								</form>
 							</div>
 						</div>
@@ -283,7 +287,6 @@ export default function Landing(props) {
 				<PricingSection />
 			</div>
 			<div class="center-center -mt-64">
-				
 				<Gallery />
 			</div>
 
