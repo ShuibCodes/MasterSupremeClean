@@ -2,10 +2,31 @@
 import React from 'react';
 import cleaner from '../images/cleaner-image.jpg'
 import {Link} from 'gatsby'
+import Carousel from '../pages/carousel'
+
 function CTA() {
 	return (
 		<div>
-			<div className="bg-white">
+		<div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+				<div class="text-center">
+					<h2 style={{ color: '#C8A762' }} class="text-base font-semibold tracking-wide uppercase">
+						Gallery
+					</h2>
+					<p
+						style={{ color: '#1070D9' }}
+						class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
+					>
+						Our Previous Cleans
+					</p>
+					<p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+						We hire the most effecient and thourough cleaners to ensure all our customers are satisfied
+					</p>
+				</div>
+			</div>
+		  <div class="flex h-auto justify-center items-center ">
+			<Carousel/>
+			</div>
+			<div className="bg-white mt-96 py-64">
 				<div className="-mt-64 w-screen mx-auto py-16 px-4 sm:px-6 lg:px-8">
 					<div
 						style={{ backgroundColor: '#1070D9' }}

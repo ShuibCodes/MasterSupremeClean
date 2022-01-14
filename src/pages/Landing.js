@@ -29,6 +29,7 @@ import cleaner from '../images/window-cleaner.jpg';
 import Footer from '../components/Footer';
 import CTA from '../components/CTA';
 import Gallery from '../components/Gallery';
+import Carousel from '../pages/carousel'
 
 const features = [
 	{
@@ -82,7 +83,7 @@ export default function Landing(props) {
 						<div className="-mr-2 -my-2 md:hidden">
 							<Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
 								<span className="sr-only">Open menu</span>
-								<MenuIcon className="h-6 w-6" aria-hidden="true" />
+								<MenuIcon className="h-6 w-6 relative left-28 " aria-hidden="true" />
 							</Popover.Button>
 						</div>
 						<div className="lg:relative lg:left-72" >
@@ -285,11 +286,14 @@ export default function Landing(props) {
 			</div>
 
 			
-			<div class="center-center -mt-64">
-				<Gallery />
-			</div>
-
+			{/* <div class="center-center">
+				<Carousel/>
+			</div> */}
+			<div class="">
 			<CTA />
+			</div>								
+			
+			
 			<Footer />
 		</div>
 	);
