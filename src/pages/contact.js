@@ -97,7 +97,7 @@ function ContactPage(props) {
 									</div>
 								</div>
 								<fieldset class="sm:col-span-2">
-									<legend class="block text-sm font-medium text-gray-700">Service Required</legend>
+									<legend class="block text-sm font-medium text-gray-700">Choose your packcage</legend>
 									<div class="mt-4 grid grid-cols-1 gap-y-4">
 										<div class="flex items-center">
 											<input
@@ -107,32 +107,32 @@ function ContactPage(props) {
 												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
-											<label for="full-house-clean" class="ml-3">
-												<span class="block text-sm text-gray-700">Full House Clean</span>
+											<label for="1-2-bed-property" class="ml-3">
+												<span class="block text-sm text-gray-700">1 & 2 Bed Property</span>
 											</label>
 										</div>
 										<div class="flex items-center">
 											<input
 												
 												name="services"
-												value="1-3 Rooms"
+												value="1-3 Bed Property"
 												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
 											<label for="budget-25k-50k" class="ml-3">
-												<span class="block text-sm text-gray-700">1-3 Rooms</span>
+												<span class="block text-sm text-gray-700">1-3 Bed Property</span>
 											</label>
 										</div>
 										<div class="flex items-center">
 											<input
 												id=""
 												name="services"
-												value="studio-flat"
+												value="5+ bed property"
 												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
 											<label for="" class="ml-3">
-												<span class="block text-sm text-gray-700">Studio Flat</span>
+												<span class="block text-sm text-gray-700">5+ bed property</span>
 											</label>
 										</div>
 									

@@ -6,6 +6,8 @@ import Carousel from '../pages/carousel'
 
 function CTA() {
 	return (
+		// Gallery 
+		<div className="lg:-mt-14">
 		<div>
 		<div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
 				<div class="text-center">
@@ -23,9 +25,15 @@ function CTA() {
 					</p>
 				</div>
 			</div>
-		  <div class="flex h-auto justify-center items-center ">
+		  <div class="flex h-auto justify-center items-center lg:-mt-12 ">
 			<Carousel/>
 			</div>
+
+		</div>
+
+
+
+
 			<div className="bg-white mt-96 py-64">
 				<div className="-mt-64 w-screen mx-auto py-16 px-4 sm:px-6 lg:px-8">
 					<div

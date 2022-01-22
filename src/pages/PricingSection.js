@@ -1,15 +1,26 @@
 /* eslint-disable */
 import React from 'react';
 import { CheckIcon } from '@heroicons/react/outline';
-import {Link} from 'gatsby'
-const hobbyFeatures = ['Pariatur quod similique', 'Sapiente libero doloribus', 'Vel ipsa esse repudiandae'];
-const scaleFeatures = ['Pariatur quod similique', 'Sapiente libero doloribus', 'Vel ipsa esse repudiandae'];
+import { Link } from 'gatsby';
+
+// basic
+
+const hobbyFeatures = [
+	'Standard Hoover', 
+	'Wet Cleaning', 
+	'Dusting & Polishing'];
+
+// advanced
 const growthFeatures = [
-	'Quia rem est sed impedit magnam',
-	'Dolorem vero ratione voluptates',
-	'Qui sed ab doloribus voluptatem dolore',
-	'Laborum commodi molestiae id et fugiat',
-	'Nam ut ipsa nesciunt culpa modi dolor',
+	'Includes all services in Basic Package ',
+	'Full Kitchen Or Bathroom clean including complete wipe down and scrubbing of all appliances ',
+];
+
+// supreme
+const scaleFeatures = [
+	'Includes all services in Advanced Package',
+	'Sapiente libero doloribus',
+	'Vel ipsa esse repudiandae',
 ];
 
 import home from '../images/home.png';
@@ -125,6 +136,12 @@ export default function PricingSection() {
 														alt="room-logo"
 													/>
 												</span>
+												<h4
+												className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
+												id="tier-growth"
+											>
+												3-4 Bedrooms
+											</h4>
 											</div>
 										</div>
 									</div>

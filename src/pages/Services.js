@@ -41,7 +41,7 @@ import map from '../images/map.png'
                       </div>
                       <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">1. Match</h3>
                       <p className="mt-5 text-base text-gray-500">
-                        Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                        
                       </p>
                     </div>
                   </div>
