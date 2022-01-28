@@ -15,7 +15,7 @@ function carousel() {
 		<>
 			
 			<div style={{ width: '500px' }} className="h-96">
-				<Carousel autoplay={true} infinite={true} dynamicHeight={true}>
+				<Carousel autoplay={true} infinite={true} dynamicHeight={true} swipeable={false}>
 					<div>
 						<img className="h-100 w-100 " src={sink} />
 					</div>

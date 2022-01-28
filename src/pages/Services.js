@@ -41,7 +41,7 @@ import map from '../images/map.png'
                       </div>
                       <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">1. Match</h3>
                       <p className="mt-5 text-base text-gray-500">
-                        
+                      Enter your post code and we’ll find you a cleaner local to you with a great price!
                       </p>
                     </div>
                   </div>
@@ -58,7 +58,7 @@ import map from '../images/map.png'
                       </div>
                       <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">2. Clean</h3>
                       <p className="mt-5 text-base text-gray-500">
-                        Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                      Our professional cleaners will put in the work and effort in cleaning your property!
                       </p>
                     </div>
                   </div>
@@ -73,8 +73,9 @@ import map from '../images/map.png'
                         </span>
                       </div>
                       <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">3. Results</h3>
-                      <p className="mt-5 text-base text-gray-500">
-                        Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                      <p className="mt-4 text-base text-gray-500">
+                      Have you seen anything with this kind of shine? Our cleaners will leave your place spotless. 
+
                       </p>
                     </div>
                   </div>

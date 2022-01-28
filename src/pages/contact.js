@@ -103,36 +103,60 @@ function ContactPage(props) {
 											<input
 												id="services"
 												name="services"
-												value="Full-house-clean"
+												value="basic"
 												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
-											<label for="1-2-bed-property" class="ml-3">
-												<span class="block text-sm text-gray-700">1 & 2 Bed Property</span>
+											<label for="basic" class="ml-3">
+												<span class="block text-sm text-gray-700">Basic</span>
 											</label>
 										</div>
 										<div class="flex items-center">
 											<input
 												
 												name="services"
-												value="1-3 Bed Property"
+												value="advanced"
 												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
-											<label for="budget-25k-50k" class="ml-3">
-												<span class="block text-sm text-gray-700">1-3 Bed Property</span>
+											<label for="advanced" class="ml-3">
+												<span class="block text-sm text-gray-700">Advanced</span>
 											</label>
 										</div>
 										<div class="flex items-center">
 											<input
 												id=""
 												name="services"
-												value="5+ bed property"
+												value="supreme"
 												type="checkbox"
 												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
 											/>
-											<label for="" class="ml-3">
-												<span class="block text-sm text-gray-700">5+ bed property</span>
+											<label for="supreme" class="ml-3">
+												<span class="block text-sm text-gray-700">Supreme</span>
+											</label>
+										</div>
+										<div class="flex items-center">
+											<input
+												id=""
+												name="services"
+												value="deep-clean"
+												type="checkbox"
+												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+											/>
+											<label for="deep-clean" class="ml-3">
+												<span class="block text-sm text-gray-700">Deep Cleaning</span>
+											</label>
+										</div>
+										<div class="flex items-center">
+											<input
+												id=""
+												name="services"
+												value="end-of-tenancy"
+												type="checkbox"
+												class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+											/>
+											<label for="end-of-tenancy" class="ml-3">
+												<span class="block text-sm text-gray-700">End of Tenanancy</span>
 											</label>
 										</div>
 									
