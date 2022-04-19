@@ -3,18 +3,33 @@ const tailwindConfig = require('./tailwind.config.js');
 
 const fullConfig = resolveConfig(tailwindConfig);
 
+require("dotenv").config({
+	path: `.env.${process.env.NODE_ENV}`,
+  })
+  
+
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Starter Tailwind`,
-		description: `Gatsby starter styled with Tailwind`,
-		author: `@taylorbryant`,
+		title: `Master Supreme Cleans`,
+		description: `Master Supreme Cleans`,
+		author: `ShuaybCodes`,
 	},
 	plugins: [
 		`gatsby-plugin-smoothscroll`,
 		`gatsby-plugin-eslint`,
 		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
 
-	
+		{
+			resolve: "gatsby-source-contentful",
+	  
+			options: {
+			  spaceId: "4gjko0b88cli",
+			  accessToken: "G9AkM_g6e2LNDxRauqqMh4rm6PxIgfOr7DyKcXa-wJA",
+			},
+		  },
 
 		{
 			resolve: `gatsby-plugin-manifest`,

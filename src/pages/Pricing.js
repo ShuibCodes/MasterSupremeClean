@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { CheckIcon } from '@heroicons/react/outline';
 import { Link } from 'gatsby';
@@ -66,6 +67,23 @@ import room from '../images/interior-design.png';
 import office from '../images/office.png';
 
 export default function PricingSection() {
+	const { allContentfulPricingPage } = useStaticQuery(
+		graphql`
+			query {
+				allContentfulPricingPage {
+					edges {
+						node {
+							basicPrice
+							price
+							supremePrice
+						}
+					}
+				}
+			}
+		`
+	);
+
+
 	return (
 		<Layout>
 			<div className="bg-white my-36" id="pricing-section">
@@ -74,10 +92,8 @@ export default function PricingSection() {
 						<p className="mt-2 text-3xl font-extrabold text-black sm:text-4xl lg:text-5xl">
 							The right price, for the right home
 						</p>
-						
 					</div>
 				</div>
-
 				<div className="mt-10 bg-white pb-4 lg:-mt-32 lg:pb-20 ">
 					<div className="relative z-0">
 						<div className="absolute inset-0 h-5/6 lg:h-1/3" />
@@ -104,7 +120,9 @@ export default function PricingSection() {
 															/>
 														</span>
 													</div>
-													<h5 className="text-center text-2xl font-bold my-4">£55 - £115</h5>
+													<h5 className="text-center text-2xl font-bold my-4">
+														{allContentfulPricingPage.edges[0]?.node.basicPrice}
+													</h5>
 												</div>
 											</div>
 											<div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
@@ -172,7 +190,9 @@ export default function PricingSection() {
 														/>
 													</span>
 												</div>
-												<h5 className="text-center text-4xl font-bold mt-5 ">£75 - £135</h5>
+												<h5 className="text-center text-4xl font-bold mt-5 ">
+													{allContentfulPricingPage.edges[0].node.price}
+												</h5>
 											</div>
 										</div>
 										<div className="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
@@ -227,7 +247,9 @@ export default function PricingSection() {
 															/>
 														</span>
 													</div>
-													<h4 className="text-center text-2xl font-bold ">£95 - £155</h4>
+													<h4 className="text-center text-2xl font-bold ">
+														{allContentfulPricingPage.edges[0].node.supremePrice}
+													</h4>
 												</div>
 											</div>
 											<div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
@@ -314,7 +336,7 @@ export default function PricingSection() {
 											</ul>
 											<div className="rounded-md shadow">
 												<Link
-													to='/contact'
+													to="/contact"
 													style={{ backgroundColor: '#1070D9' }}
 													className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900"
 													aria-describedby="tier-standard"
@@ -339,15 +361,19 @@ export default function PricingSection() {
 									</div>
 									<div className="mt-4 text-lg text-gray-600">
 										For commercial cleaning, please contact us for a direct quote for all commercial
-										queries at <a 
-										href="mailto:contact@mastersupremeclean.com"
-										style={{color:"blue", textDecoration: "underline"}}  > contact@mastersupremeclean.com</a>
-										
+										queries at{' '}
+										<a
+											href="mailto:contact@mastersupremeclean.com"
+											style={{ color: 'blue', textDecoration: 'underline' }}
+										>
+											{' '}
+											contact@mastersupremeclean.com
+										</a>
 									</div>
 								</div>
 								<div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
 									<Link
-										to='/contact'
+										to="/contact"
 										className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
 									>
 										Contact Us

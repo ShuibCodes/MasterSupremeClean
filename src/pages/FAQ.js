@@ -59,6 +59,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+// pull from CMS 
+
 export default function Faqs() {
   return (
     <Layout>
