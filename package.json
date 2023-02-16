@@ -6,7 +6,7 @@
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
-    "gatsby": "2.32.12",
+    "gatsby": "5.6.1",
     "gatsby-plugin-manifest": "2.12.1",
     "gatsby-plugin-offline": "3.10.2",
     "gatsby-plugin-postcss": "3.7.0",
